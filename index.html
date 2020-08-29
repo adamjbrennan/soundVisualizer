@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href = "soundVisualizer.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script language = "JavaScript" type = "text/javascript" src = "scripts/animations.js"></script>
+        <script language = "JavaScript" type = "text/javascript" src = "scripts/helpers.js"></script>
+        <script language = "JavaScript" type = "text/javascript" src = "scripts/circles.js"></script>
+        <script language = "JavaScript" type = "text/javascript" src = "scripts/pillars.js"></script>
+        <script language = "JavaScript" type = "text/javascript" src = "scripts/main.js"></script>
+        <title>Anime.js Sound Visualizer</title>
+</head>
+<body style = "background-color: black;">
+    <main>
+       <div id = "visualizer" class = "container-fluid">
+           <div class = "drop-down" id = "intro" class = "container">
+                <h1 class = "text-center">Anime.js Sound Visualizer</h1>
+                <h3 class = "text-center">by Adam Brennan</h3>
+                <button  id = "start" type = "button" class = " btn btn-dark">Start</button>
+            </div>
+            <svg class = "drop-down" id = "drawing" width = "100%" height = "100%">
+                <circle id = "background-circle" cx = "50%" cy = "50%" r="300" stroke="white" stroke-width="3" fill="black"/>
+           </svg>
+           <svg id = "flying-circles" width = "100%" height = "100%"></svg>
+            <svg id = "pillars" width = "100%" height = "100%" style = "display: none"></svg>
+           <audio id = "audioinput" style = "display: none">
+            <source src="songs/orchestra.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+
+</html>
