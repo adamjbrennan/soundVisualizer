@@ -1,2 +1,2 @@
-# js_sound_visualizer
+# Anime.js Sound Visualizer
  Sound visualizer created with JavaScript and Anime.js
